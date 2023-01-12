@@ -23,6 +23,7 @@ async def Sumar(uno: int):
 async def SumarMas(num1: int, num2: int):
     return {f"Tu suma de {num1} + {num2} es: " f"{Suma(num1, num2).sumaCompleta()}"}
 
+#Esta prueba es la buena para usarlo en la calculadora
 @app.get("/prueba3/")
 async def SumarMas(num1: int = 0, num2: int = 0):
     return {f"Tu suma de {num1} + {num2} es: " f"{Suma(num1, num2).sumaCompleta()}"}
